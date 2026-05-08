@@ -1,139 +1,3 @@
-<?php
-$properties = [
-    [
-        'id' => 1,
-        'title' => 'Modern Family Home in Austin',
-        'price' => '$485,000',
-        'location' => 'Austin, Texas',
-        'beds' => 4,
-        'baths' => 3,
-        'area' => '2,450 sqft',
-        'type' => 'House',
-        'status' => 'For Sale',
-        'label' => 'Featured',
-        'image' => 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
-        'gallery' => [
-            'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80'
-        ],
-        'description' => 'A bright and elegant family home with premium finishes, open-plan living spaces, and a beautiful landscaped yard. Perfect for buyers looking for comfort, curb appeal, and a strong neighborhood location.',
-        'features' => ['Open-concept kitchen', 'Walk-in closets', 'Private backyard', '2-car garage', 'Smart home features', 'Nearby schools'],
-        'agent' => 'Sophia Carter',
-        'agentPhone' => '(512) 555-0141'
-    ],
-    [
-        'id' => 2,
-        'title' => 'Luxury Downtown Condo',
-        'price' => '$620,000',
-        'location' => 'Dallas, Texas',
-        'beds' => 2,
-        'baths' => 2,
-        'area' => '1,580 sqft',
-        'type' => 'Condo',
-        'status' => 'For Sale',
-        'label' => 'Hot Deal',
-        'image' => 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
-        'gallery' => [
-            'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
-        ],
-        'description' => 'An upscale condo in the heart of downtown, designed for professionals and investors who want style, convenience, and access to city life.',
-        'features' => ['City skyline view', 'Fitness center access', 'Private balcony', 'Modern kitchen', 'Secure parking', 'Walkable location'],
-        'agent' => 'Noah Bennett',
-        'agentPhone' => '(214) 555-0199'
-    ],
-    [
-        'id' => 3,
-        'title' => 'Cozy Suburban Starter Home',
-        'price' => '$315,000',
-        'location' => 'Houston, Texas',
-        'beds' => 3,
-        'baths' => 2,
-        'area' => '1,780 sqft',
-        'type' => 'House',
-        'status' => 'For Sale',
-        'label' => 'New Listing',
-        'image' => 'https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80',
-        'gallery' => [
-            'https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1200&q=80'
-        ],
-        'description' => 'A charming starter home with warm interiors, a family-friendly layout, and a price point that appeals to first-time buyers.',
-        'features' => ['Updated bathrooms', 'Fenced yard', 'Quiet neighborhood', 'Natural light', 'Affordable entry point', 'Move-in ready'],
-        'agent' => 'Emma Brooks',
-        'agentPhone' => '(713) 555-0113'
-    ],
-    [
-        'id' => 4,
-        'title' => 'Investment Duplex Opportunity',
-        'price' => '$540,000',
-        'location' => 'San Antonio, Texas',
-        'beds' => 6,
-        'baths' => 4,
-        'area' => '3,200 sqft',
-        'type' => 'Investment',
-        'status' => 'For Sale',
-        'label' => 'Investor Pick',
-        'image' => 'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80',
-        'gallery' => [
-            'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=1200&q=80'
-        ],
-        'description' => 'A strong cash-flow opportunity for investors, with dual-unit potential, spacious interiors, and excellent rental appeal.',
-        'features' => ['Dual-unit layout', 'Strong rental potential', 'Separate entrances', 'Parking space', 'Growth area', 'Value-add potential'],
-        'agent' => 'Liam Hayes',
-        'agentPhone' => '(210) 555-0188'
-    ],
-    [
-        'id' => 5,
-        'title' => 'Executive Home with Pool',
-        'price' => '$895,000',
-        'location' => 'Plano, Texas',
-        'beds' => 5,
-        'baths' => 4,
-        'area' => '4,100 sqft',
-        'type' => 'Luxury',
-        'status' => 'For Sale',
-        'label' => 'Luxury',
-        'image' => 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-        'gallery' => [
-            'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80'
-        ],
-        'description' => 'An executive-level property with standout curb appeal, premium materials, and a resort-style pool designed to impress high-end buyers.',
-        'features' => ['Resort-style pool', 'Chef’s kitchen', 'Home office', 'Premium finishes', 'Large primary suite', 'Prestige location'],
-        'agent' => 'Ava Mitchell',
-        'agentPhone' => '(972) 555-0135'
-    ],
-    [
-        'id' => 6,
-        'title' => 'Townhouse Near Shopping District',
-        'price' => '$390,000',
-        'location' => 'Fort Worth, Texas',
-        'beds' => 3,
-        'baths' => 2.5,
-        'area' => '1,920 sqft',
-        'type' => 'Townhouse',
-        'status' => 'For Sale',
-        'label' => 'Popular',
-        'image' => 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80',
-        'gallery' => [
-            'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80'
-        ],
-        'description' => 'A stylish townhouse close to shopping, dining, and daily conveniences, ideal for busy professionals and young families.',
-        'features' => ['Low-maintenance living', 'Attached garage', 'Modern layout', 'Close to retail', 'Community amenities', 'Excellent accessibility'],
-        'agent' => 'Ethan Cole',
-        'agentPhone' => '(817) 555-0176'
-    ]
-];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,223 +8,72 @@ $properties = [
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    :root{
-      --gold:#C9933A;--gold2:#E8B35A;--navy:#020617;--navy2:#0f172a;
-    }
-    body{font-family:'DM Sans',Arial,sans-serif}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,Helvetica,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.6}
+    :root{ --gold:#C9933A;--gold2:#E8B35A;--navy:#020617;--navy2:#0f172a; }
+    body{font-family:'DM Sans',Arial,sans-serif; background:#f8fafc; color:#0f172a; line-height:1.6; margin:0; padding:0;}
+    *{box-sizing:border-box;}
     img{display:block;max-width:100%}
     a{text-decoration:none;color:inherit}
     .container{width:min(1380px,94%);margin:0 auto}
-    .topbar{background:#020617;color:#fff;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    .topbar{background:var(--navy);color:#fff;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.08)}
     .nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
-    .logo{font-size:22px;font-weight:800;letter-spacing:.5px}
-    .logo span{color:#facc15}
+    .logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700}
+    .logo span{color:var(--gold2)}
+    .logo .sub{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);font-family:'DM Sans',sans-serif;font-weight:300;margin-top:-2px}
     .nav-links{display:flex;gap:22px;align-items:center;color:#cbd5e1;font-size:14px}
-    .nav-cta{background:#facc15;color:#111827;padding:12px 18px;border-radius:14px;font-weight:700}
+    .nav-cta{background:var(--gold);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700; transition: .2s;}
+    .nav-cta:hover{background:var(--gold2)}
 
     .hero{background:linear-gradient(135deg,#020617,#0f172a 40%,#1e293b);color:#fff;padding:70px 0 50px;position:relative;overflow:hidden}
     .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
-    .hero h1{font-size:56px;line-height:1.05;margin-bottom:18px;max-width:820px}
-    .hero h1 span{color:#facc15}
+    .hero h1{font-family:'Playfair Display',serif; font-size:56px;line-height:1.05;margin-bottom:18px;max-width:820px}
+    .hero h1 span{color:var(--gold2)}
     .hero p{max-width:700px;color:#cbd5e1;font-size:18px}
     .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
-    .btn{display:inline-block;padding:14px 22px;border-radius:16px;font-weight:700;transition:.2s ease}
-    .btn-primary{background:#facc15;color:#111827}
+    .btn{display:inline-block;padding:14px 22px;border-radius:16px;font-weight:700;transition:.2s ease; border: none; cursor: pointer;}
+    .btn-primary{background:var(--gold);color:#fff}
+    .btn-primary:hover{background:var(--gold2)}
     .btn-dark{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:#fff}
-    .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;max-width:650px}
+    
+    .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;max-width:650px}
     .stat{background:rgba(255,255,255,.08);padding:18px;border-radius:22px;text-align:center}
     .stat strong{display:block;font-size:28px}
-    .stat span{font-size:14px;color:#cbd5e1}
-    .spotlight-card{background:#fff;border-radius:28px;padding:16px;box-shadow:0 18px 50px rgba(0,0,0,.25)}
-    .spotlight-inner{background:#f8fafc;border-radius:22px;overflow:hidden}
-    .spotlight-inner img{height:370px;width:100%;object-fit:cover}
+
+    .spotlight-card{background:#fff;border-radius:28px;padding:16px;box-shadow:0 18px 50px rgba(0,0,0,.25); color: #111;}
+    .spotlight-inner img{height:370px;width:100%;object-fit:cover; border-radius: 22px 22px 0 0;}
     .spotlight-content{padding:20px}
-    .mini-tag{display:inline-block;padding:6px 12px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:12px;font-weight:700;margin-bottom:10px}
-    .spotlight-title{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-    .spotlight-price{background:#facc15;padding:10px 14px;border-radius:14px;font-weight:800;white-space:nowrap}
+    .spotlight-price{background:var(--gold); color:#fff; padding:10px 14px;border-radius:14px;font-weight:800;}
 
     .search-panel{margin-top:-28px;position:relative;z-index:3}
     .search-wrap{background:#fff;border-radius:26px;box-shadow:0 14px 40px rgba(15,23,42,.12);padding:18px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr auto;gap:12px}
-    .search-wrap input,.search-wrap select{width:100%;padding:14px 16px;border:1px solid #e2e8f0;border-radius:14px;background:#fff;font-size:15px}
-    .search-wrap button{border:none;cursor:pointer}
+    .search-wrap input, .search-wrap select{width:100%;padding:14px 16px;border:1px solid #e2e8f0;border-radius:14px;background:#fff;font-size:15px}
 
-    .page{padding:38px 0 70px}
-    .layout{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:start}
-    .sidebar,.detail-panel,.listing-card,.feature-box,.cta-box{background:#fff;border:1px solid #e2e8f0;border-radius:26px;box-shadow:0 10px 25px rgba(15,23,42,.04)}
-    .sidebar{padding:22px;position:sticky;top:18px}
-    .sidebar h3{font-size:20px;margin-bottom:16px}
-    .filter-group{margin-bottom:22px}
-    .filter-group label{display:block;font-size:14px;font-weight:700;margin-bottom:8px;color:#334155}
-    .filter-group input,.filter-group select{width:100%;padding:13px 14px;border:1px solid #e2e8f0;border-radius:14px}
-    .filter-pills{display:flex;flex-wrap:wrap;gap:8px}
-    .pill{padding:9px 12px;border-radius:999px;background:#f1f5f9;border:1px solid #e2e8f0;font-size:13px;cursor:pointer}
-    .pill.active{background:#facc15;border-color:#facc15;color:#111827;font-weight:700}
-    .sidebar .btn{width:100%;text-align:center}
-
-    .content{display:grid;gap:24px}
-    .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
-    .section-head h2{font-size:34px;line-height:1.15}
-    .section-head p{color:#64748b;max-width:700px}
-    .feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .feature-box{padding:20px}
-    .feature-box strong{display:block;font-size:18px;margin-bottom:6px}
-    .feature-box p{color:#64748b;font-size:14px}
-
-    .listing-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+    .layout{display:grid;grid-template-columns:300px 1fr;gap:26px;margin-top: 40px; align-items:start}
+    .sidebar{background:#fff;border:1px solid #e2e8f0;border-radius:26px;padding:22px;position:sticky;top:18px}
     .listing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .listing-card{overflow:hidden;cursor:pointer;transition:.22s ease}
+    .listing-card{background:#fff; border:1px solid #e2e8f0; border-radius:26px; overflow:hidden; cursor:pointer; transition:.22s ease}
     .listing-card:hover{transform:translateY(-4px);box-shadow:0 18px 30px rgba(15,23,42,.08)}
-    .listing-thumb{position:relative}
     .listing-thumb img{height:210px;width:100%;object-fit:cover}
-    .label{position:absolute;left:14px;top:14px;background:#facc15;color:#111827;font-size:12px;font-weight:800;padding:7px 10px;border-radius:999px}
-    .status{position:absolute;right:14px;top:14px;background:rgba(2,6,23,.78);color:#fff;font-size:12px;padding:7px 10px;border-radius:999px}
     .listing-body{padding:18px}
-    .listing-body h4{font-size:21px;line-height:1.2;margin-bottom:8px}
-    .price{font-size:24px;font-weight:800;margin-bottom:4px}
-    .location{color:#64748b;font-size:14px;margin-bottom:12px}
-    .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 14px}
-    .meta div{background:#f8fafc;border-radius:14px;padding:10px;text-align:center;font-size:13px;color:#334155}
-    .card-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#0f172a;font-size:14px}
-    .view-link{font-weight:700;color:#b45309}
-
-    .detail-panel{padding:22px}
-    .detail-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
-    .main-photo{border-radius:24px;overflow:hidden}
-    .main-photo img{height:430px;width:100%;object-fit:cover}
-    .thumb-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
-    .thumb-row img{height:105px;width:100%;object-fit:cover;border-radius:16px}
-    .detail-side h2{font-size:34px;line-height:1.1;margin-bottom:10px}
-    .detail-side .price-large{font-size:34px;font-weight:800;margin:8px 0 2px}
-    .detail-side .location{font-size:16px}
-    .detail-badges{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
-    .badge{padding:10px 14px;border-radius:999px;background:#f1f5f9;border:1px solid #e2e8f0;font-size:13px;font-weight:700}
-    .detail-desc{color:#475569;margin:16px 0 20px}
-    .feature-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px}
-    .feature-item{padding:12px 14px;border-radius:16px;background:#f8fafc;border:1px solid #e2e8f0;font-size:14px}
-    .agent-box{margin-top:20px;padding:20px;border-radius:22px;background:#020617;color:#fff}
-    .agent-box p{color:#cbd5e1}
-    .agent-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-
-    .bottom-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
-    .cta-box{padding:24px}
-    .cta-box h3{font-size:26px;margin-bottom:10px}
-    .cta-box p{color:#64748b;margin-bottom:18px}
-    .quick-form{display:grid;gap:12px}
-    .quick-form input,.quick-form textarea{width:100%;padding:14px 16px;border:1px solid #e2e8f0;border-radius:14px}
-    .quick-form textarea{min-height:120px;resize:vertical}
-
-    @media (max-width:1180px){
-      .listing-grid{grid-template-columns:repeat(2,1fr)}
-      .feature-grid{grid-template-columns:repeat(2,1fr)}
-      .detail-grid,.hero-grid,.bottom-grid{grid-template-columns:1fr}
-      .search-wrap{grid-template-columns:1fr 1fr}
-    }
-    @media (max-width:920px){
-      .layout{grid-template-columns:1fr}
-      .sidebar{position:static}
-      .hero h1{font-size:42px}
-      .hero-stats{grid-template-columns:1fr}
-      .nav-links{display:none}
-    }
-    @media (max-width:680px){
-      .listing-grid,.feature-grid,.thumb-row,.feature-list,.meta,.search-wrap{grid-template-columns:1fr}
-      .hero h1{font-size:34px}
-      .section-head{flex-direction:column;align-items:flex-start}
-      .spotlight-inner img,.main-photo img{height:260px}
-      .listing-thumb img{height:220px}
-    }
-
-    /* ===== BRANDING OVERRIDES ===== */
-    .topbar{background:var(--navy)}
-    .logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700}
-    .logo .sub{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);font-family:'DM Sans',sans-serif;font-weight:300;margin-top:-2px}
-    .btn-primary{background:var(--gold);color:#fff}
-    .btn-primary:hover{background:var(--gold2)}
-    .label{background:var(--gold);color:#fff}
-    .pill.active{background:var(--navy);border-color:var(--navy);color:#fff}
-    .view-link{color:var(--gold)}
-    .agent-box{background:var(--navy)}
-    .mini-tag{background:#fef3c7;color:#92400e}
-    .spotlight-price{background:var(--gold);color:#fff}
-    .nav-cta{background:var(--gold);color:#fff;border-radius:10px}
-    .nav-cta:hover{background:var(--gold2)}
-    h1 span,.logo span{color:var(--gold2)}
-    .hero h1{font-family:'Playfair Display',serif}
-    .section-head h2,.detail-side h2,.cta-box h3{font-family:'Playfair Display',serif}
-
-    /* ===== MAP SECTION ===== */
-    .map-section{margin-top:24px;border-radius:22px;overflow:hidden;border:1px solid #e2e8f0}
-    .map-header{background:var(--navy);color:#fff;padding:12px 18px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px}
-    .map-frame{height:280px;background:linear-gradient(145deg,#e8f4e8 0%,#d4e8d4 30%,#c8e0f0 60%,#e0ecc8 100%);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-    .map-roads{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.3;pointer-events:none}
-    .map-pin-wrap{text-align:center;position:relative;z-index:2}
-    .map-pin{width:48px;height:48px;background:var(--gold);border-radius:50% 50% 50% 0;transform:rotate(-45deg);margin:0 auto 14px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(201,147,58,.5);animation:mapbounce 2s infinite}
-    .map-pin i{transform:rotate(45deg);color:#fff;font-size:20px}
-    @keyframes mapbounce{0%,100%{transform:rotate(-45deg) translateY(0)}50%{transform:rotate(-45deg) translateY(-7px)}}
-    .map-label{background:rgba(255,255,255,.96);padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;color:var(--navy);box-shadow:0 3px 12px rgba(0,0,0,.15)}
-    .map-strips{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px 16px;background:#fff}
-    .map-strip{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0}
-    .map-strip i{font-size:16px;color:var(--gold);min-width:20px}
-    .map-strip strong{display:block;font-size:12px;color:var(--navy)}
-    .map-strip span{font-size:12px;color:#64748b}
-
-    /* ===== MORTGAGE CALCULATOR ===== */
-    .calc-section{background:#fff;border:1px solid #e2e8f0;border-radius:26px;padding:28px;margin-top:24px;box-shadow:0 10px 25px rgba(15,23,42,.04)}
-    .calc-section h3{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:6px;color:var(--navy2)}
-    .calc-section > p{color:#64748b;font-size:14px;margin-bottom:22px}
-    .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
-    .calc-inputs .filter-group{margin-bottom:14px}
-    .calc-inputs .filter-group input,.calc-inputs .filter-group select{padding:11px 14px;border-radius:12px}
-    .calc-result-card{background:var(--navy);border-radius:18px;padding:26px;color:#fff;text-align:center}
-    .calc-monthly-label{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.6);margin-bottom:10px}
-    .calc-monthly{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:var(--gold2);margin-bottom:20px}
-    .calc-breakdown{display:flex;flex-direction:column;gap:10px}
-    .calc-row{display:flex;justify-content:space-between;font-size:13px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1)}
-    .calc-row:last-child{border:none}
-    .calc-row span{color:rgba(255,255,255,.65)}
-    .calc-row strong{color:#fff}
-    .calc-btn{width:100%;background:var(--gold);color:#fff;padding:13px;border-radius:14px;border:none;font-size:14px;font-weight:700;cursor:pointer;margin-top:10px;transition:.2s}
-    .calc-btn:hover{background:var(--gold2)}
-    @media(max-width:680px){.calc-grid,.map-strips{grid-template-columns:1fr}}
-
-    /* ===== CONTACT FULL PAGE ===== */
-    .contact-section{background:#fff;border:1px solid #e2e8f0;border-radius:26px;padding:28px;margin-top:24px;box-shadow:0 10px 25px rgba(15,23,42,.04)}
-    .contact-section h3{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:6px;color:var(--navy2)}
-    .contact-intro{color:#64748b;font-size:14px;margin-bottom:24px}
-    .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-    .contact-items{display:flex;flex-direction:column;gap:14px;margin-bottom:20px}
-    .contact-item{display:flex;align-items:center;gap:14px;padding:14px 16px;background:#f8fafc;border-radius:14px;border:1px solid #e2e8f0}
-    .contact-item i{font-size:20px;color:var(--gold);min-width:24px}
-    .contact-item strong{display:block;font-size:13px;font-weight:700;color:var(--navy2)}
-    .contact-item span{font-size:13px;color:#64748b}
-    .wa-big-btn{width:100%;background:#25D366;color:#fff;padding:14px;border-radius:14px;border:none;font-size:15px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:.2s;margin-top:12px}
-    .wa-big-btn:hover{background:#1EBE58}
-    .quick-form .submit-btn{width:100%;background:var(--navy);color:#fff;padding:13px;border-radius:14px;border:none;font-size:14px;font-weight:700;cursor:pointer;transition:.2s}
-    .quick-form .submit-btn:hover{background:var(--gold)}
-    @media(max-width:680px){.contact-layout{grid-template-columns:1fr}}
-
-    /* ===== WHATSAPP FLOAT ===== */
-    .wa-float{position:fixed;bottom:26px;left:26px;background:#25D366;color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 16px rgba(37,211,102,.5);cursor:pointer;z-index:9998;text-decoration:none;transition:transform .2s}
-    .wa-float:hover{transform:scale(1.1)}
-    .wa-tooltip{position:fixed;bottom:90px;left:20px;background:var(--navy);color:#fff;padding:8px 14px;border-radius:10px;font-size:12px;font-weight:600;z-index:9997;display:none;white-space:nowrap}
-    .wa-float:hover + .wa-tooltip,.wa-tooltip:hover{display:block}
-
-    /* ===== TOAST ===== */
-    .toast{position:fixed;bottom:26px;right:26px;background:var(--navy);color:#fff;padding:13px 22px;border-radius:12px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.2);transform:translateY(100px);opacity:0;transition:.4s;z-index:9999;border-left:4px solid var(--gold)}
-    .toast.show{transform:translateY(0);opacity:1}
+    .label{background:var(--gold);color:#fff;font-size:12px;font-weight:800;padding:7px 10px;border-radius:999px}
+    
+    /* Mortgage & Detail Styles included for completeness */
+    .detail-panel{background:#fff; border:1px solid #e2e8f0; border-radius:26px; padding:22px; margin-top: 30px;}
+    .main-photo img{height:430px;width:100%;object-fit:cover; border-radius: 24px;}
+    .calc-section{background:#fff;border:1px solid #e2e8f0;border-radius:26px;padding:28px;margin-top:24px;}
+    .calc-monthly{font-family:'Playfair Display',serif;font-size:44px;color:var(--gold2); text-align: center;}
+    
+    .toast{position:fixed;bottom:26px;right:26px;background:var(--navy);color:#fff;padding:13px 22px;border-radius:12px;opacity:0;transition:.4s;z-index:9999;border-left:4px solid var(--gold)}
+    .toast.show{opacity:1}
   </style>
 </head>
 <body>
+
   <header class="topbar">
     <div class="container nav">
       <div class="logo">Elite <span>Properties</span><span class="sub">Texas Real Estate</span></div>
       <div class="nav-links">
         <a href="#listings">Listings</a>
-        <a href="#details">Property Details</a>
         <a href="#mortgage-calc">Calculator</a>
-        <a href="#contact-section">Contact Us</a>
       </div>
       <a href="#contact-section" class="nav-cta">Contact Us</a>
     </div>
@@ -370,472 +83,125 @@ $properties = [
     <div class="container hero-grid">
       <div>
         <h1>Find Your Dream <span>Property</span> in Texas</h1>
-        <p>Residential homes, condos, and investment properties — Our team helps you find the right fit with confidence and expert guidance.</p>
+        <p>Residential homes, condos, and investment properties.</p>
         <div class="hero-actions">
           <a href="#listings" class="btn btn-primary">Browse Listings</a>
-          <a href="#mortgage-calc" class="btn btn-dark">Mortgage Calculator</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><strong>250+</strong><span>Active Listings</span></div>
-          <div class="stat"><strong>8 yrs</strong><span>In Business</span></div>
-          <div class="stat"><strong>1,200+</strong><span>Deals Closed</span></div>
         </div>
       </div>
-      <div>
-        <div class="spotlight-card">
-          <div class="spotlight-inner">
-            <img src="<?php echo htmlspecialchars($properties[4]['image']); ?>" alt="Luxury property">
-            <div class="spotlight-content">
-              <span class="mini-tag">Featured Luxury Pick</span>
-              <div class="spotlight-title">
-                <div>
-                  <h3><?php echo htmlspecialchars($properties[4]['title']); ?></h3>
-                  <p style="color:#64748b;margin-top:4px"><?php echo htmlspecialchars($properties[4]['location']); ?></p>
-                </div>
-                <div class="spotlight-price"><?php echo htmlspecialchars($properties[4]['price']); ?></div>
-              </div>
-            </div>
-          </div>
+      <div class="spotlight-card" id="hero-spotlight">
         </div>
-      </div>
     </div>
   </section>
 
   <section class="search-panel">
     <div class="container">
       <div class="search-wrap">
-        <input type="text" id="searchInput" placeholder="Search by city, title, or keyword...">
+        <input type="text" id="searchInput" placeholder="Search city or keyword...">
         <select id="typeFilter">
           <option value="All">All Types</option>
           <option value="House">House</option>
           <option value="Condo">Condo</option>
-          <option value="Townhouse">Townhouse</option>
           <option value="Luxury">Luxury</option>
-          <option value="Investment">Investment</option>
         </select>
-        <select id="priceFilter">
-          <option value="All">Any Price</option>
-          <option value="0-400000">Under $400k</option>
-          <option value="400001-600000">$400k - $600k</option>
-          <option value="600001-900000">$600k - $900k</option>
-        </select>
-        <select id="bedFilter">
-          <option value="All">Any Beds</option>
-          <option value="2">2+ Beds</option>
-          <option value="3">3+ Beds</option>
-          <option value="4">4+ Beds</option>
-          <option value="5">5+ Beds</option>
-        </select>
-        <button class="btn btn-primary" id="applyFiltersBtn" type="button">Apply</button>
+        <button class="btn btn-primary" onclick="applyFilters()">Search</button>
       </div>
     </div>
   </section>
 
-  <main class="page">
-    <div class="container layout">
-      <aside class="sidebar" id="buyers">
-        <h3>Buyer Filters</h3>
-        <div class="filter-group">
-          <label>Property Type</label>
-          <div class="filter-pills" id="typePills">
-            <button class="pill active" type="button" data-type="All">All</button>
-            <button class="pill" type="button" data-type="House">House</button>
-            <button class="pill" type="button" data-type="Condo">Condo</button>
-            <button class="pill" type="button" data-type="Townhouse">Townhouse</button>
-            <button class="pill" type="button" data-type="Luxury">Luxury</button>
-            <button class="pill" type="button" data-type="Investment">Investment</button>
-          </div>
-        </div>
-        <div class="filter-group">
-          <label>Keyword Search</label>
-          <input type="text" id="sidebarSearch" placeholder="Example: Austin, pool, family...">
-        </div>
-        <div class="filter-group">
-          <label>Location</label>
-          <select id="locationFilter">
-            <option value="All">All Locations</option>
-            <option value="Austin, Texas">Austin, Texas</option>
-            <option value="Dallas, Texas">Dallas, Texas</option>
-            <option value="Houston, Texas">Houston, Texas</option>
-            <option value="San Antonio, Texas">San Antonio, Texas</option>
-            <option value="Plano, Texas">Plano, Texas</option>
-            <option value="Fort Worth, Texas">Fort Worth, Texas</option>
-          </select>
-        </div>
-        <div class="filter-group">
-          <label>Buyer Intent</label>
-          <div class="filter-pills">
-            <span class="pill">Family Home</span>
-            <span class="pill">Luxury</span>
-            <span class="pill">Starter Home</span>
-            <span class="pill">Investor</span>
-          </div>
-        </div>
-        <button class="btn btn-primary" type="button" id="resetFilters">Reset Filters</button>
-      </aside>
+  <div class="container layout">
+    <aside class="sidebar">
+      <h3>Quick Filters</h3>
+      <br>
+      <button class="btn btn-primary" style="width:100%" onclick="resetFilters()">Reset All</button>
+    </aside>
 
-      <section class="content">
-        <div class="section-head">
-          <div>
-            <h2>Real estate features buyers love</h2>
-            <p>Show properties professionally, let visitors filter fast, and provide a detailed property view that creates urgency and trust.</p>
-          </div>
+    <section>
+      <h2 id="listings">Available Listings</h2>
+      <div class="listing-grid" id="listingGrid">
         </div>
 
-        <div class="feature-grid">
-          <div class="feature-box"><strong>Live-style filters</strong><p>Filter by type, price, beds, and city so buyers can narrow choices fast.</p></div>
-          <div class="feature-box"><strong>Clickable property cards</strong><p>Each listing opens into a focused property section with richer details and visuals.</p></div>
-          <div class="feature-box"><strong>Buyer-centered details</strong><p>Show features, neighborhood appeal, agent contact, and strong calls to action.</p></div>
-          <div class="feature-box"><strong>Lead capture ready</strong><p>Add inquiry forms, callbacks, bookings, or CRM integration later.</p></div>
-        </div>
+      <div id="details" class="detail-panel" style="display:none">
+        <h2 id="detailTitle">Property Details</h2>
+        <div class="main-photo"><img id="detailImage" src="" alt=""></div>
+        <p id="detailDesc" style="margin-top:20px;"></p>
+        <div class="calc-monthly" id="detailPrice"></div>
+      </div>
+    </section>
+  </div>
 
-        <div id="listings" class="listing-top">
-          <h2 style="font-size:32px">Available Listings</h2>
-          <p id="listingCount" style="color:#64748b;font-weight:700">Showing <?php echo count($properties); ?> properties</p>
-        </div>
-
-        <div class="listing-grid" id="listingGrid">
-          <?php foreach ($properties as $property): ?>
-            <article class="listing-card"
-              data-id="<?php echo $property['id']; ?>"
-              data-title="<?php echo htmlspecialchars($property['title']); ?>"
-              data-price="<?php echo htmlspecialchars($property['price']); ?>"
-              data-location="<?php echo htmlspecialchars($property['location']); ?>"
-              data-beds="<?php echo htmlspecialchars($property['beds']); ?>"
-              data-baths="<?php echo htmlspecialchars($property['baths']); ?>"
-              data-area="<?php echo htmlspecialchars($property['area']); ?>"
-              data-type="<?php echo htmlspecialchars($property['type']); ?>"
-              data-status="<?php echo htmlspecialchars($property['status']); ?>"
-              data-label="<?php echo htmlspecialchars($property['label']); ?>"
-              data-image="<?php echo htmlspecialchars($property['image']); ?>"
-              data-gallery='<?php echo json_encode($property['gallery']); ?>'
-              data-description="<?php echo htmlspecialchars($property['description']); ?>"
-              data-features='<?php echo json_encode($property['features']); ?>'
-              data-agent="<?php echo htmlspecialchars($property['agent']); ?>"
-              data-agentphone="<?php echo htmlspecialchars($property['agentPhone']); ?>">
-              <div class="listing-thumb">
-                <img src="<?php echo htmlspecialchars($property['image']); ?>" alt="<?php echo htmlspecialchars($property['title']); ?>">
-                <span class="label"><?php echo htmlspecialchars($property['label']); ?></span>
-                <span class="status"><?php echo htmlspecialchars($property['status']); ?></span>
-              </div>
-              <div class="listing-body">
-                <div class="price"><?php echo htmlspecialchars($property['price']); ?></div>
-                <h4><?php echo htmlspecialchars($property['title']); ?></h4>
-                <div class="location"><?php echo htmlspecialchars($property['location']); ?></div>
-                <div class="meta">
-                  <div><?php echo htmlspecialchars($property['beds']); ?> Beds</div>
-                  <div><?php echo htmlspecialchars($property['baths']); ?> Baths</div>
-                  <div><?php echo htmlspecialchars($property['area']); ?></div>
-                </div>
-                <div class="card-footer">
-                  <span><?php echo htmlspecialchars($property['type']); ?></span>
-                  <span class="view-link">View Details →</span>
-                </div>
-              </div>
-            </article>
-          <?php endforeach; ?>
-        </div>
-
-        <div id="details" class="detail-panel">
-          <div class="listing-top" style="margin-bottom:18px">
-            <h2 style="font-size:32px">Focused Property Details</h2>
-            <span style="color:#64748b;font-weight:700">Click any card above to update this section</span>
-          </div>
-
-          <div class="detail-grid">
-            <div>
-              <div class="main-photo"><img id="detailMainImage" src="<?php echo htmlspecialchars($properties[0]['gallery'][0]); ?>" alt="Property image"></div>
-              <div class="thumb-row" id="thumbRow">
-                <?php foreach ($properties[0]['gallery'] as $galleryImage): ?>
-                  <img src="<?php echo htmlspecialchars($galleryImage); ?>" alt="Gallery image">
-                <?php endforeach; ?>
-              </div>
-
-              <div class="map-section">
-                <div class="map-header"><i class="fas fa-map-marked-alt"></i> Property Location &amp; Neighborhood</div>
-                <div class="map-frame">
-                  <svg class="map-roads" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="50%" x2="100%" y2="50%" stroke="#888" stroke-width="2.5"/><line x1="30%" y1="0" x2="30%" y2="100%" stroke="#888" stroke-width="2"/><line x1="70%" y1="0" x2="70%" y2="100%" stroke="#888" stroke-width="2"/><line x1="0" y1="25%" x2="100%" y2="25%" stroke="#aaa" stroke-width="1"/><line x1="0" y1="75%" x2="100%" y2="75%" stroke="#aaa" stroke-width="1"/><line x1="50%" y1="0" x2="50%" y2="100%" stroke="#bbb" stroke-width="1"/></svg>
-                  <div class="map-pin-wrap">
-                    <div class="map-pin"><i class="fas fa-home"></i></div>
-                    <div class="map-label" id="mapLabel"><?php echo htmlspecialchars($properties[0]['location']); ?></div>
-                  </div>
-                </div>
-                <div class="map-strips">
-                  <div class="map-strip"><i class="fas fa-school"></i><div><strong>Nearby Schools</strong><span>3 schools within 1 mile</span></div></div>
-                  <div class="map-strip"><i class="fas fa-road"></i><div><strong>Highway Access</strong><span>Major highway — under 1 mi</span></div></div>
-                  <div class="map-strip"><i class="fas fa-shopping-cart"></i><div><strong>Shopping</strong><span>Mall / retail — 1–2 mi away</span></div></div>
-                  <div class="map-strip"><i class="fas fa-hospital"></i><div><strong>Medical</strong><span>Clinic / hospital nearby</span></div></div>
-                </div>
-              </div>
-            </div>
-            <div class="detail-side">
-              <div class="detail-badges">
-                <span class="badge" id="detailLabel"><?php echo htmlspecialchars($properties[0]['label']); ?></span>
-                <span class="badge" id="detailType"><?php echo htmlspecialchars($properties[0]['type']); ?></span>
-                <span class="badge" id="detailStatus"><?php echo htmlspecialchars($properties[0]['status']); ?></span>
-              </div>
-              <h2 id="detailTitle"><?php echo htmlspecialchars($properties[0]['title']); ?></h2>
-              <div class="price-large" id="detailPrice"><?php echo htmlspecialchars($properties[0]['price']); ?></div>
-              <div class="location" id="detailLocation"><?php echo htmlspecialchars($properties[0]['location']); ?></div>
-
-              <div class="meta" style="margin-top:16px">
-                <div><span id="detailBeds"><?php echo htmlspecialchars($properties[0]['beds']); ?></span> Beds</div>
-                <div><span id="detailBaths"><?php echo htmlspecialchars($properties[0]['baths']); ?></span> Baths</div>
-                <div id="detailArea"><?php echo htmlspecialchars($properties[0]['area']); ?></div>
-              </div>
-
-              <p class="detail-desc" id="detailDescription"><?php echo htmlspecialchars($properties[0]['description']); ?></p>
-
-              <h3 style="margin-bottom:10px">Key Features That Catch Buyer Attention</h3>
-              <div class="feature-list" id="detailFeatures">
-                <?php foreach ($properties[0]['features'] as $feature): ?>
-                  <div class="feature-item"><?php echo htmlspecialchars($feature); ?></div>
-                <?php endforeach; ?>
-              </div>
-
-              <div class="agent-box" id="contact">
-                <h3 style="margin-bottom:6px">Connect with the Listing Agent</h3>
-                <p>Speak directly with <strong id="detailAgent"><?php echo htmlspecialchars($properties[0]['agent']); ?></strong> to schedule a tour, ask for pricing details, or make an offer.</p>
-                <p style="margin-top:8px">Phone: <strong id="detailAgentPhone"><?php echo htmlspecialchars($properties[0]['agentPhone']); ?></strong></p>
-                <div class="agent-actions">
-                  <a href="#contact-form" class="btn btn-primary">Schedule a Viewing</a>
-                  <a href="#contact-form" class="btn btn-dark">Request Callback</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="calc-section" id="mortgage-calc">
-          <h3>Mortgage Calculator</h3>
-          <p>Estimate your monthly payment before you inquire — plan smarter and move faster.</p>
-          <div class="calc-grid">
-            <div class="calc-inputs">
-              <div class="filter-group"><label>Home Price ($)</label><input type="number" id="cPrice" value="450000" oninput="calcMortgage()"></div>
-              <div class="filter-group"><label>Down Payment ($)</label><input type="number" id="cDown" value="90000" oninput="calcMortgage()"></div>
-              <div class="filter-group"><label>Interest Rate (% / year)</label><input type="number" id="cRate" value="6.8" step="0.1" oninput="calcMortgage()"></div>
-              <div class="filter-group"><label>Loan Term</label>
-                <select id="cTerm" onchange="calcMortgage()">
-                  <option value="30">30 Years</option><option value="20">20 Years</option>
-                  <option value="15">15 Years</option><option value="10">10 Years</option>
-                </select>
-              </div>
-              <div class="filter-group"><label>Property Tax ($/year)</label><input type="number" id="cTax" value="5400" oninput="calcMortgage()"></div>
-              <button class="calc-btn" onclick="calcMortgage()"><i class="fas fa-calculator"></i> Calculate Payment</button>
-            </div>
-            <div class="calc-result-card">
-              <div class="calc-monthly-label">Estimated Monthly Payment</div>
-              <div class="calc-monthly" id="calcMonthly">$2,847</div>
-              <div class="calc-breakdown">
-                <div class="calc-row"><span>Principal &amp; Interest</span><strong id="calcPI">$2,397</strong></div>
-                <div class="calc-row"><span>Property Tax / mo</span><strong id="calcTax">$450</strong></div>
-                <div class="calc-row"><span>Loan Amount</span><strong id="calcLoan">$360,000</strong></div>
-                <div class="calc-row"><span>Total Interest Paid</span><strong id="calcTotalInt">$503,124</strong></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-section" id="contact-section">
-          <h3>Contact Our Team</h3>
-          <p class="contact-intro">Our team in Texas is ready to help you buy, sell, or rent. Reach us by email, WhatsApp, or fill out the form below.</p>
-          <div class="contact-layout">
-            <div>
-              <div class="contact-items">
-                <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>inquiry@texasproperties.com</span></div></div>
-                <div class="contact-item"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp</strong><span>Chat with our team directly</span></div></div>
-                <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><span>Texas, United States</span></div></div>
-                <div class="contact-item"><i class="fas fa-clock"></i><div><strong>Business Hours</strong><span>Mon-Fri 8am-6pm / Sat 9am-3pm</span></div></div>
-              </div>
-              <button class="wa-big-btn" onclick="showToast('Opening WhatsApp...')"><i class="fab fa-whatsapp"></i> Chat on WhatsApp Now</button>
-            </div>
-            <div>
-              <form class="quick-form" id="contact-form">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-                <input type="text" placeholder="Phone Number">
-                <select style="width:100%;padding:14px 16px;border:1px solid #e2e8f0;border-radius:14px;background:#fff;font-size:15px">
-                  <option>Buying a Property</option><option>Selling My Property</option>
-                  <option>Renting</option><option>Commercial Space</option><option>General Inquiry</option>
-                </select>
-                <textarea placeholder="Tell us how we can help..."></textarea>
-                <button type="button" class="submit-btn" onclick="showToast('Message sent! Our team will follow up shortly.')"><i class="fas fa-paper-plane"></i> Send Message</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
+  <div class="toast" id="siteToast"></div>
 
   <script>
-    const cards = document.querySelectorAll('.listing-card');
-    const listingCount = document.getElementById('listingCount');
-    const searchInput = document.getElementById('searchInput');
-    const sidebarSearch = document.getElementById('sidebarSearch');
-    const typeFilter = document.getElementById('typeFilter');
-    const locationFilter = document.getElementById('locationFilter');
-    const priceFilter = document.getElementById('priceFilter');
-    const bedFilter = document.getElementById('bedFilter');
-    const resetFilters = document.getElementById('resetFilters');
-    const applyFiltersBtn = document.getElementById('applyFiltersBtn');
-    const pills = document.querySelectorAll('#typePills .pill');
+    // DATA MOVED FROM PHP TO JAVASCRIPT
+    const properties = [
+      {
+        id: 1, title: 'Modern Family Home in Austin', price: '$485,000', location: 'Austin, Texas',
+        beds: 4, baths: 3, area: '2,450 sqft', type: 'House', label: 'Featured',
+        image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
+        description: 'A bright and elegant family home with premium finishes.'
+      },
+      {
+        id: 2, title: 'Luxury Downtown Condo', price: '$620,000', location: 'Dallas, Texas',
+        beds: 2, baths: 2, area: '1,580 sqft', type: 'Condo', label: 'Hot Deal',
+        image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
+        description: 'An upscale condo in the heart of downtown.'
+      },
+      {
+        id: 5, title: 'Executive Home with Pool', price: '$895,000', location: 'Plano, Texas',
+        beds: 5, baths: 4, area: '4,100 sqft', type: 'Luxury', label: 'Luxury',
+        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
+        description: 'An executive-level property with standout curb appeal.'
+      }
+    ];
 
-    let activeType = 'All';
-
-    function priceToNumber(priceText) {
-      return parseInt(priceText.replace(/[^0-9]/g, ''), 10) || 0;
+    function renderListings(data) {
+      const grid = document.getElementById('listingGrid');
+      grid.innerHTML = data.map(p => `
+        <article class="listing-card" onclick="showDetail(${p.id})">
+          <div class="listing-thumb">
+            <img src="${p.image}" alt="${p.title}">
+          </div>
+          <div class="listing-body">
+            <span class="label">${p.label}</span>
+            <div style="font-weight:800; font-size: 20px; margin-top:10px">${p.price}</div>
+            <h4>${p.title}</h4>
+            <div style="color:#64748b; font-size:14px">${p.location}</div>
+          </div>
+        </article>
+      `).join('');
     }
 
-    function updateDetail(card) {
-      document.getElementById('detailMainImage').src = card.dataset.image;
-      document.getElementById('detailTitle').textContent = card.dataset.title;
-      document.getElementById('detailPrice').textContent = card.dataset.price;
-      document.getElementById('detailLocation').textContent = card.dataset.location;
-      document.getElementById('detailBeds').textContent = card.dataset.beds;
-      document.getElementById('detailBaths').textContent = card.dataset.baths;
-      document.getElementById('detailArea').textContent = card.dataset.area;
-      document.getElementById('detailDescription').textContent = card.dataset.description;
-      document.getElementById('detailLabel').textContent = card.dataset.label;
-      document.getElementById('detailType').textContent = card.dataset.type;
-      document.getElementById('detailStatus').textContent = card.dataset.status;
-      document.getElementById('detailAgent').textContent = card.dataset.agent;
-      document.getElementById('detailAgentPhone').textContent = card.dataset.agentphone;
-
-      const features = JSON.parse(card.dataset.features || '[]');
-      const gallery = JSON.parse(card.dataset.gallery || '[]');
-
-      const detailFeatures = document.getElementById('detailFeatures');
-      detailFeatures.innerHTML = '';
-      features.forEach(feature => {
-        const div = document.createElement('div');
-        div.className = 'feature-item';
-        div.textContent = feature;
-        detailFeatures.appendChild(div);
-      });
-
-      const thumbRow = document.getElementById('thumbRow');
-      thumbRow.innerHTML = '';
-      gallery.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = 'Gallery image ' + (index + 1);
-        img.addEventListener('click', () => {
-          document.getElementById('detailMainImage').src = src;
-        });
-        thumbRow.appendChild(img);
-      });
-
-      document.getElementById('details').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    function showDetail(id) {
+      const p = properties.find(item => item.id === id);
+      const detailSection = document.getElementById('details');
+      detailSection.style.display = 'block';
+      document.getElementById('detailTitle').innerText = p.title;
+      document.getElementById('detailImage').src = p.image;
+      document.getElementById('detailDesc').innerText = p.description;
+      document.getElementById('detailPrice').innerText = p.price;
+      detailSection.scrollIntoView({ behavior: 'smooth' });
     }
 
     function applyFilters() {
-      const mainSearch = searchInput.value.toLowerCase().trim();
-      const sideSearch = sidebarSearch.value.toLowerCase().trim();
-      const typeValue = activeType === 'All' ? typeFilter.value : activeType;
-      const locationValue = locationFilter.value;
-      const priceValue = priceFilter.value;
-      const bedsValue = bedFilter.value;
-      let visibleCount = 0;
-
-      cards.forEach(card => {
-        const title = card.dataset.title.toLowerCase();
-        const location = card.dataset.location.toLowerCase();
-        const type = card.dataset.type;
-        const price = priceToNumber(card.dataset.price);
-        const beds = parseFloat(card.dataset.beds);
-        const description = card.dataset.description.toLowerCase();
-
-        const matchesMainSearch = !mainSearch || title.includes(mainSearch) || location.includes(mainSearch) || description.includes(mainSearch);
-        const matchesSideSearch = !sideSearch || title.includes(sideSearch) || location.includes(sideSearch) || description.includes(sideSearch);
-        const matchesType = typeValue === 'All' || type === typeValue;
-        const matchesLocation = locationValue === 'All' || card.dataset.location === locationValue;
-
-        let matchesPrice = true;
-        if (priceValue !== 'All') {
-          const [min, max] = priceValue.split('-').map(Number);
-          matchesPrice = price >= min && price <= max;
-        }
-
-        const matchesBeds = bedsValue === 'All' || beds >= parseFloat(bedsValue);
-
-        const show = matchesMainSearch && matchesSideSearch && matchesType && matchesLocation && matchesPrice && matchesBeds;
-        card.style.display = show ? '' : 'none';
-        if (show) visibleCount++;
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const type = document.getElementById('typeFilter').value;
+      
+      const filtered = properties.filter(p => {
+        const matchesSearch = p.title.toLowerCase().includes(search) || p.location.toLowerCase().includes(search);
+        const matchesType = type === 'All' || p.type === type;
+        return matchesSearch && matchesType;
       });
-
-      listingCount.textContent = `Showing ${visibleCount} propert${visibleCount === 1 ? 'y' : 'ies'}`;
+      renderListings(filtered);
     }
 
-    pills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        pills.forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        activeType = pill.dataset.type;
-        typeFilter.value = activeType === 'All' ? 'All' : activeType;
-        applyFilters();
-      });
-    });
-
-    cards.forEach(card => {
-      card.addEventListener('click', () => updateDetail(card));
-    });
-
-    [searchInput, sidebarSearch, typeFilter, locationFilter, priceFilter, bedFilter].forEach(el => {
-      el.addEventListener('input', applyFilters);
-      el.addEventListener('change', applyFilters);
-    });
-
-    applyFiltersBtn.addEventListener('click', applyFilters);
-
-    resetFilters.addEventListener('click', () => {
-      searchInput.value = '';
-      sidebarSearch.value = '';
-      typeFilter.value = 'All';
-      locationFilter.value = 'All';
-      priceFilter.value = 'All';
-      bedFilter.value = 'All';
-      activeType = 'All';
-      pills.forEach(p => p.classList.remove('active'));
-      document.querySelector('#typePills .pill[data-type="All"]').classList.add('active');
-      applyFilters();
-    });
-  
-    function calcMortgage() {
-      const price = parseFloat(document.getElementById('cPrice').value) || 0;
-      const down = parseFloat(document.getElementById('cDown').value) || 0;
-      const rate = parseFloat(document.getElementById('cRate').value) || 0;
-      const term = parseInt(document.getElementById('cTerm').value) || 30;
-      const tax = parseFloat(document.getElementById('cTax').value) || 0;
-      const loan = price - down;
-      const r = rate / 100 / 12;
-      const n = term * 12;
-      let pi = 0;
-      if (r > 0) pi = loan * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
-      const monthlyTax = tax / 12;
-      const total = pi + monthlyTax;
-      const totalInt = (pi * n) - loan;
-      const fmt = v => '$' + Math.round(v).toLocaleString();
-      document.getElementById('calcMonthly').textContent = fmt(total);
-      document.getElementById('calcPI').textContent = fmt(pi);
-      document.getElementById('calcTax').textContent = fmt(monthlyTax);
-      document.getElementById('calcLoan').textContent = fmt(loan);
-      document.getElementById('calcTotalInt').textContent = fmt(Math.max(0, totalInt));
+    function resetFilters() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('typeFilter').value = 'All';
+      renderListings(properties);
     }
-    calcMortgage();
 
-    function showToast(msg) {
-      const t = document.getElementById('siteToast');
-      t.textContent = msg;
-      t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 3500);
-    }
+    // Initialize
+    renderListings(properties);
   </script>
-
-  <a class="wa-float" onclick="showToast('Opening WhatsApp...')" title="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <div class="wa-tooltip">Chat with us on WhatsApp</div>
-  <div class="toast" id="siteToast"></div>
 </body>
 </html>
