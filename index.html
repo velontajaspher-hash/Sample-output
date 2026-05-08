@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Properties — Texas Real Estate Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{ --gold:#C9933A;--gold2:#E8B35A;--navy:#020617;--navy2:#0f172a; }
+    body{font-family:'DM Sans',Arial,sans-serif; background:#f8fafc; color:#0f172a; line-height:1.6; margin:0; padding:0;}
+    *{box-sizing:border-box;}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1380px,94%);margin:0 auto}
+    .topbar{background:var(--navy);color:#fff;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700}
+    .logo span{color:var(--gold2)}
+    .logo .sub{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);font-family:'DM Sans',sans-serif;font-weight:300;margin-top:-2px}
+    .nav-links{display:flex;gap:22px;align-items:center;color:#cbd5e1;font-size:14px}
+    .nav-cta{background:var(--gold);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700; transition: .2s;}
+    .nav-cta:hover{background:var(--gold2)}
+
+    .hero{background:linear-gradient(135deg,#020617,#0f172a 40%,#1e293b);color:#fff;padding:70px 0 50px;position:relative;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+    .hero h1{font-family:'Playfair Display',serif; font-size:56px;line-height:1.05;margin-bottom:18px;max-width:820px}
+    .hero h1 span{color:var(--gold2)}
+    .hero p{max-width:700px;color:#cbd5e1;font-size:18px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+    .btn{display:inline-block;padding:14px 22px;border-radius:16px;font-weight:700;transition:.2s ease; border: none; cursor: pointer;}
+    .btn-primary{background:var(--gold);color:#fff}
+    .btn-primary:hover{background:var(--gold2)}
+    .btn-dark{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:#fff}
+    
+    .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;max-width:650px}
+    .stat{background:rgba(255,255,255,.08);padding:18px;border-radius:22px;text-align:center}
+    .stat strong{display:block;font-size:28px}
+
+    .spotlight-card{background:#fff;border-radius:28px;padding:16px;box-shadow:0 18px 50px rgba(0,0,0,.25); color: #111;}
+    .spotlight-inner img{height:370px;width:100%;object-fit:cover; border-radius: 22px 22px 0 0;}
+    .spotlight-content{padding:20px}
+    .spotlight-price{background:var(--gold); color:#fff; padding:10px 14px;border-radius:14px;font-weight:800;}
+
+    .search-panel{margin-top:-28px;position:relative;z-index:3}
+    .search-wrap{background:#fff;border-radius:26px;box-shadow:0 14px 40px rgba(15,23,42,.12);padding:18px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr auto;gap:12px}
+    .search-wrap input, .search-wrap select{width:100%;padding:14px 16px;border:1px solid #e2e8f0;border-radius:14px;background:#fff;font-size:15px}
+
+    .layout{display:grid;grid-template-columns:300px 1fr;gap:26px;margin-top: 40px; align-items:start}
+    .sidebar{background:#fff;border:1px solid #e2e8f0;border-radius:26px;padding:22px;position:sticky;top:18px}
+    .listing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .listing-card{background:#fff; border:1px solid #e2e8f0; border-radius:26px; overflow:hidden; cursor:pointer; transition:.22s ease}
+    .listing-card:hover{transform:translateY(-4px);box-shadow:0 18px 30px rgba(15,23,42,.08)}
+    .listing-thumb img{height:210px;width:100%;object-fit:cover}
+    .listing-body{padding:18px}
+    .label{background:var(--gold);color:#fff;font-size:12px;font-weight:800;padding:7px 10px;border-radius:999px}
+    
+    /* Mortgage & Detail Styles included for completeness */
+    .detail-panel{background:#fff; border:1px solid #e2e8f0; border-radius:26px; padding:22px; margin-top: 30px;}
+    .main-photo img{height:430px;width:100%;object-fit:cover; border-radius: 24px;}
+    .calc-section{background:#fff;border:1px solid #e2e8f0;border-radius:26px;padding:28px;margin-top:24px;}
+    .calc-monthly{font-family:'Playfair Display',serif;font-size:44px;color:var(--gold2); text-align: center;}
+    
+    .toast{position:fixed;bottom:26px;right:26px;background:var(--navy);color:#fff;padding:13px 22px;border-radius:12px;opacity:0;transition:.4s;z-index:9999;border-left:4px solid var(--gold)}
+    .toast.show{opacity:1}
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container nav">
+      <div class="logo">Elite <span>Properties</span><span class="sub">Texas Real Estate</span></div>
+      <div class="nav-links">
+        <a href="#listings">Listings</a>
+        <a href="#mortgage-calc">Calculator</a>
+      </div>
+      <a href="#contact-section" class="nav-cta">Contact Us</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Find Your Dream <span>Property</span> in Texas</h1>
+        <p>Residential homes, condos, and investment properties.</p>
+        <div class="hero-actions">
+          <a href="#listings" class="btn btn-primary">Browse Listings</a>
+        </div>
+      </div>
+      <div class="spotlight-card" id="hero-spotlight">
+        </div>
+    </div>
+  </section>
+
+  <section class="search-panel">
+    <div class="container">
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search city or keyword...">
+        <select id="typeFilter">
+          <option value="All">All Types</option>
+          <option value="House">House</option>
+          <option value="Condo">Condo</option>
+          <option value="Luxury">Luxury</option>
+        </select>
+        <button class="btn btn-primary" onclick="applyFilters()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <aside class="sidebar">
+      <h3>Quick Filters</h3>
+      <br>
+      <button class="btn btn-primary" style="width:100%" onclick="resetFilters()">Reset All</button>
+    </aside>
+
+    <section>
+      <h2 id="listings">Available Listings</h2>
+      <div class="listing-grid" id="listingGrid">
+        </div>
+
+      <div id="details" class="detail-panel" style="display:none">
+        <h2 id="detailTitle">Property Details</h2>
+        <div class="main-photo"><img id="detailImage" src="" alt=""></div>
+        <p id="detailDesc" style="margin-top:20px;"></p>
+        <div class="calc-monthly" id="detailPrice"></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="siteToast"></div>
+
+  <script>
+    // DATA MOVED FROM PHP TO JAVASCRIPT
+    const properties = [
+      {
+        id: 1, title: 'Modern Family Home in Austin', price: '$485,000', location: 'Austin, Texas',
+        beds: 4, baths: 3, area: '2,450 sqft', type: 'House', label: 'Featured',
+        image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
+        description: 'A bright and elegant family home with premium finishes.'
+      },
+      {
+        id: 2, title: 'Luxury Downtown Condo', price: '$620,000', location: 'Dallas, Texas',
+        beds: 2, baths: 2, area: '1,580 sqft', type: 'Condo', label: 'Hot Deal',
+        image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
+        description: 'An upscale condo in the heart of downtown.'
+      },
+      {
+        id: 5, title: 'Executive Home with Pool', price: '$895,000', location: 'Plano, Texas',
+        beds: 5, baths: 4, area: '4,100 sqft', type: 'Luxury', label: 'Luxury',
+        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
+        description: 'An executive-level property with standout curb appeal.'
+      }
+    ];
+
+    function renderListings(data) {
+      const grid = document.getElementById('listingGrid');
+      grid.innerHTML = data.map(p => `
+        <article class="listing-card" onclick="showDetail(${p.id})">
+          <div class="listing-thumb">
+            <img src="${p.image}" alt="${p.title}">
+          </div>
+          <div class="listing-body">
+            <span class="label">${p.label}</span>
+            <div style="font-weight:800; font-size: 20px; margin-top:10px">${p.price}</div>
+            <h4>${p.title}</h4>
+            <div style="color:#64748b; font-size:14px">${p.location}</div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function showDetail(id) {
+      const p = properties.find(item => item.id === id);
+      const detailSection = document.getElementById('details');
+      detailSection.style.display = 'block';
+      document.getElementById('detailTitle').innerText = p.title;
+      document.getElementById('detailImage').src = p.image;
+      document.getElementById('detailDesc').innerText = p.description;
+      document.getElementById('detailPrice').innerText = p.price;
+      detailSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function applyFilters() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const type = document.getElementById('typeFilter').value;
+      
+      const filtered = properties.filter(p => {
+        const matchesSearch = p.title.toLowerCase().includes(search) || p.location.toLowerCase().includes(search);
+        const matchesType = type === 'All' || p.type === type;
+        return matchesSearch && matchesType;
+      });
+      renderListings(filtered);
+    }
+
+    function resetFilters() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('typeFilter').value = 'All';
+      renderListings(properties);
+    }
+
+    // Initialize
+    renderListings(properties);
+  </script>
+</body>
+</html>
